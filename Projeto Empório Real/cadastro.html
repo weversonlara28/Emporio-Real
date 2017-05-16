@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>
+        Empório Real
+    </title>
+    <meta charset="utf-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/logo.png"/>
+    <link rel="stylesheet" type="text/css" href="css/cadastro.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    </head>
+<body> 
+    
+    <div id = "wrapper">
+        <section>
+			<!--Cadastro-->
+            <div class="Cadastro"> 
+            <center><h4>Formulário de Cadastro:</h4><br>
+			     <form name ="myForm" onsubmit=" return validateForm()" method="post" action="cadastrarcliente.php">
+                     Nome de Usuário:<br>
+                     <input type="text" id="Usuario" name="usuario" size="20" placeholder="Nome de Usuário:" maxlength="20"><br><br>
+
+                     Senha:<br>
+                     <input type="password" id="Senha" name="senha" size="20" placeholder="Senha:" maxlength="45"><br><br>
+
+                     Nome:<br>
+                     <input type="text" id="nome" name="nome" size="20" placeholder="Nome:" maxlength="30"><br><br>
+
+                     Sobrenome:<br>
+                     <input type="text" id="Sobrenome" name="sobrenome" size="20" placeholder="Sobrenome:" maxlength="15"><br><br>                
+                     Data de Nascimento:<br>
+                     <input type="date" id="Nasc" name="nasc"><br><br>
+
+                     CPF:<br>
+                     <input type="text" id="CPF" name="cpf" size="20" placeholder="CPF:" maxlength="11"><br><br>
+
+                     Sexo:<br>
+                     <input type="radio" name="sexo" value="M" Checked>Masculino<br>
+                     <input type="radio" name="sexo" value="F">Feminino<br><br>
+
+                     Endereço<br>
+                     <input type="text" id="endereco" name="endereco" size="20" placeholder="Endereço:" maxlength="45"><br><br>
+                     
+                     Numero:<br>
+                     <input type="text" id="numero" name="numero" size="5" placeholder="Número:" maxlength="5"><br><br>
+					 
+					 Bairro:<br>
+					 <input type="text" id="bairro" name="bairro" size="20" placeholder="Bairro:" maxlength="30"><br><br>
+                     
+                     
+                     Estado:<br>
+                     <select id="estados" name="estados">
+                        <option value=""></option>
+                     </select>
+                     <br><br>
+                     Cidade:<br>
+                        <select id="cidades" name="cidades">
+                            <option value="">Cidade</option>
+                     </select><br><br>
+
+                     CEP<br>
+                     <input type="text" id="CEP" name="cep" size="20" placeholder="CEP:" maxlength="8"><br><br>
+					 
+					 DDD:<br>
+					 <input type="text" id="" name="dddtel" size="3" placeholder="DDD:" maxlength="3"><br><br>
+                     
+					 Telefone<br>
+                     <input type="text" id="Telefone" name="telefone" size="20" placeholder="Telefone:" maxlength="9"><br><br>
+					 
+					 DDD:<br>
+					 <input type="text" id="" name="dddcel" size="3" placeholder="DDD:" maxlength="3"><br><br>
+					 
+                     Celular<br>
+                     <input type="text" id="celular" name="celular" size="20" placeholder="Celular:" maxlength="9"><br><br>
+
+                     Email:<br>
+                     <input type="text" id="email" name="email" size="20" placeholder="E-mail:" maxlength="50"><br><br>
+
+                     <!--Botão-->
+                     <input type="submit" name="submit" id="submit" value="Cadastrar">
+
+                     <input type="reset" name="resetar" id="resetar" value="Limpar">
+                </form></center>
+                <br>
+                <!--Botão-->
+                     
+                <form>
+                    
+                     <input class="bottom2" type="reset" name="resetar" id="resetar" value="Limpar">
+                    
+                    <input class="bottom" type="submit" name="submit" id="submit" value="Cadastrar">
+                
+                </form>
+                </div>
+            
+        </section>
+    
+        <br>
+        <br>
+            
+        </body>
+</html>
